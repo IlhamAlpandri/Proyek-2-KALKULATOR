@@ -8,6 +8,90 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
         <link rel="responsive" type="text/css" href="responsive.css">
 	<script src="script.js"></script>
+	<style>
+		/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+
+    .container {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+  
+    .container {
+      width: 100%;
+    }
+    
+  }
+	</style>
+	<script>
+		function insert(num){
+	document.form.textarea.value = document.form.textarea.value + num;
+}
+
+function equal(){
+	var hasil = document. form.textarea.value;
+	document.form.textarea.value = eval(hasil);
+}
+
+function clean(){
+	document.form.textarea.value = "";
+}
+
+function back(){
+	var hasil = document.form.textarea.value;
+	document.form.textarea.value = hasil.substring(0,hasil.length-1);
+}
+	</script>
+	<style>
+		body {
+	background-image: url(oke.jpg);
+	background-size: cover;
+}
+
+.container{
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 500px;
+}
+
+.button{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	margin: 2px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background: #333;
+}
+
+.button:hover{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background: #D2691E;
+}
+
+.textarea{
+	width: 230px;
+	height: 50px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	text-align: center;
+	background: #eeefff;
+	opacity: .7;
+}
+	</style>
 </head>
 <body>
 	<div class="container">
